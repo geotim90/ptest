@@ -1,6 +1,6 @@
 {
   "en": {
-    "prompt": "Arrange the following words by clicking and dragging them. Place the word that applies most at the top of the list and the word that applies least at the bottom of the list.",
+    "prompt": "Arrange the following words by clicking/tapping and dragging them. Place the word that applies most at the top of the list and the word that applies least at the bottom of the list.",
     "items": [
       {
         "r": "Self-confident",
@@ -65,7 +65,7 @@
     ]
   },
   "de": {
-    "prompt": "Sortieren Sie die folgende Wörter durch Klicken und Ziehen, wobei oben das Wort stehen soll, welches am ehesten zutrifft und unten das Wort stehen soll, welches am wenigsten zutrifft.",
+    "prompt": "Sortieren Sie die folgende Wörter durch Klicken/Drücken und Ziehen, wobei oben das Wort stehen soll, welches am ehesten zutrifft und unten das Wort stehen soll, welches am wenigsten zutrifft.",
     "items": [
       {
         "r": "Selbstsicher",
