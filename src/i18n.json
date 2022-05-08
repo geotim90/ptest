@@ -1,0 +1,132 @@
+{
+  "en": {
+    "prompt": "Arrange the following words by clicking and dragging them. Place the word that applies most at the top of the list and the word that applies least at the bottom of the list.",
+    "items": [
+      {
+        "r": "Self-confident",
+        "y": "Optimistic",
+        "g": "Harmonious",
+        "b": "Precise"
+      },
+      {
+        "r": "Daring",
+        "y": "Friendly",
+        "g": "Attentive",
+        "b": "Pensive"
+      },
+      {
+        "r": "Decisive",
+        "y": "Spontaneous",
+        "g": "Patient",
+        "b": "Self-controlled"
+      },
+      {
+        "r": "Determining",
+        "y": "Zealous",
+        "g": "Team Player",
+        "b": "Thorough"
+      },
+      {
+        "r": "Strong",
+        "y": "Popular",
+        "g": "Trustworthy",
+        "b": "Analytical"
+      },
+      {
+        "r": "Result-oriented",
+        "y": "Enthusiastic",
+        "g": "Consistent",
+        "b": "Self-disciplined"
+      },
+      {
+        "r": "Risk Taker",
+        "y": "Positive",
+        "g": "Supportive",
+        "b": "Reserved"
+      },
+      {
+        "r": "Goal-oriented",
+        "y": "Impulsive",
+        "g": "Reliable",
+        "b": "Critical"
+      },
+      {
+        "r": "Fearless",
+        "y": "Sociable",
+        "g": "Modest",
+        "b": "Structured"
+      },
+      {
+        "r": "Persistent",
+        "y": "Convincing",
+        "g": "Mediative",
+        "b": "Scheduled"
+      }
+    ]
+  },
+  "de": {
+    "prompt": "Sortieren Sie die folgende Wörter durch Klicken und Ziehen, wobei oben das Wort stehen soll, welches am ehesten zutrifft und unten das Wort stehen soll, welches am wenigsten zutrifft.",
+    "items": [
+      {
+        "r": "Selbstsicher",
+        "y": "Optimistisch",
+        "g": "Harmonisch",
+        "b": "Genau"
+      },
+      {
+        "r": "Wagemutig",
+        "y": "Kontaktfreudig",
+        "g": "Zuhörend",
+        "b": "Nachdenkend"
+      },
+      {
+        "r": "Entscheidungsfreudig",
+        "y": "Spontan",
+        "g": "Geduldig",
+        "b": "Kontrolliert"
+      },
+      {
+        "r": "Bestimmend",
+        "y": "Begeistert",
+        "g": "Teamfähig",
+        "b": "Sorgfältig"
+      },
+      {
+        "r": "Kraftvoll",
+        "y": "Beliebt",
+        "g": "Vertrauensvoll",
+        "b": "Analytisch"
+      },
+      {
+        "r": "Ergebnisorientiert",
+        "y": "Enthusiastisch",
+        "g": "Beständig",
+        "b": "Selbstdiszipliniert"
+      },
+      {
+        "r": "Risikofreudig",
+        "y": "Positiv",
+        "g": "Unterstützend",
+        "b": "Zurückhaltend"
+      },
+      {
+        "r": "Zielorientiert",
+        "y": "Impulsiv",
+        "g": "Zuverlässig",
+        "b": "Kritisch"
+      },
+      {
+        "r": "Furchtlos",
+        "y": "Gesellig",
+        "g": "Unauffällig",
+        "b": "Strukturiert"
+      },
+      {
+        "r": "Hartnäckig",
+        "y": "Überzeugend",
+        "g": "Vermittelnd",
+        "b": "Planend"
+      }
+    ]
+  }
+}
