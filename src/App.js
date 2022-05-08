@@ -19,18 +19,18 @@ function App() {
     const [options, setOptions] = useState(shuffle(Object.entries(i18n['en'].items[order[0]])));
     const [score, setScore] = useState({r: 0, y: 0, g: 0, b: 0});
 
-    const toggleLanguage = () => {
+    const toggleLanguage = (language, index, options) => {
         let newLanguage = 'en';
         if (language === 'en') {
             newLanguage = 'de';
         }
         setLanguage(newLanguage);
         // translate shuffled values without changing their position
-        const optionsTranslation = i18n[newLanguage].items[order[index + 1]];
+        const optionsTranslation = i18n[newLanguage].items[order[index]];
         setOptions(options.map(([k, v]) => [k, optionsTranslation[k]]));
     };
 
-    const onDragEnd = (result) => {
+    const onDragEnd = (result, options) => {
         if (result.destination) {
             setOptions(reorder(
                 options,
@@ -40,7 +40,7 @@ function App() {
         }
     };
 
-    const onNextClicked = () => {
+    const onNextClicked = (score, options, language, index) => {
         setScore({
             r: score.r + getPoints(options, 'r'),
             y: score.y + getPoints(options, 'y'),
@@ -56,7 +56,7 @@ function App() {
     return (
         <Stack spacing={2}>
             {index < end ? <>
-                <Button onClick={toggleLanguage}>
+                <Button onClick={() => toggleLanguage(language, index, options)}>
                     <img src="./gb.svg" alt="English" style={{height: '1rem'}}/>
                     &nbsp;&harr;&nbsp;
                     <img src="./de.svg" alt="Deutsch" style={{height: '1rem'}}/>
@@ -65,7 +65,7 @@ function App() {
                     <Typography>{i18n[language].prompt}</Typography>
                 </Paper>
                 <LinearProgress variant="determinate" value={index * 10}/>
-                <DragDropContext onDragEnd={onDragEnd}>
+                <DragDropContext onDragEnd={(result) => onDragEnd(result, options)}>
                     <Droppable droppableId="droppable">
                         {(provided) => (
                             <Stack spacing={2} {...provided.droppableProps} ref={provided.innerRef}>
@@ -88,7 +88,9 @@ function App() {
                         )}
                     </Droppable>
                 </DragDropContext>
-                <Button variant="contained" onClick={onNextClicked} sx={{p: 2}}>Next</Button>
+                <Button variant="contained" onClick={() => onNextClicked(score, options, language, index)} sx={{p: 2}}>
+                    Next
+                </Button>
             </> : <>
                 <HighchartsReact highcharts={Highcharts} options={{
                     chart: {
@@ -105,10 +107,7 @@ function App() {
                         pointFormat: '{point.y:.0f}'
                     },
                     accessibility: {
-                        enabled: false,
-                        point: {
-                            valueSuffix: '%'
-                        }
+                        enabled: false
                     },
                     plotOptions: {
                         pie: {
